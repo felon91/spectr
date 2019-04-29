@@ -1,0 +1,76 @@
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.61);
+}
+
+.fixed-menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.fixed-menu__logo {
+  margin-right: 30px;
+  flex-basis: 160px;
+  flex-shrink: 0;
+}
+
+.fixed-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 900px;
+}
+
+.fixed-menu__item {
+  margin-right: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.fixed-menu__link {
+  text-decoration: none;
+  color: $white;
+  transition-duration: 500ms;
+  transition-property: color;
+  box-sizing: border-box;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(20px);
+
+  &:hover {
+    color: $primary;
+  }
+
+}
+
+.fixed-menu__item--mail {
+
+  .fixed-menu__link {
+    padding-left: 40px;
+    background: url("../img/mail.svg") left center no-repeat;
+    background-size: 23px 18px;
+  }
+
+}
+
+.fixed-menu__item--phone {
+
+  .fixed-menu__link {
+    padding-left: 25px;
+    background: url("../img/phone.svg") left 1px no-repeat;
+    background-size: 15px 15px;
+  }
+
+}

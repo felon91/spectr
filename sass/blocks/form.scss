@@ -1,0 +1,117 @@
+.form {
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../img/form-bg.png") left top no-repeat;
+    position: absolute;
+    left: -30px;
+    bottom: -25px;
+    width: 416px;
+    height: 520px;
+    z-index: 0;
+  }
+
+}
+
+.form__wrap {
+  padding: px-to-rem(12px) px-to-rem(30px);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  background: rgba(56, 56, 56, 0.88);
+}
+
+.form__title {
+  font-size: px-to-rem(29px);
+  line-height: px-to-rem(41px);
+  letter-spacing: px-to-rem(0.725px);
+  text-align: center;
+  color: $white;
+  font-family: 'impactregular';
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.form__description {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(22px);
+  text-align: center;
+  font-weight: 300;
+  color: $white;
+  margin: 10px 0 15px;
+}
+
+.form__input {
+  margin-bottom: 13px;
+  margin-top: 13px;
+
+  label {
+    @include visually-hidden;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    background-color: #f6f6f6;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(29px);
+    color: #000;
+    padding: 11px 0 11px 20px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #141414;
+    }
+
+  }
+
+}
+
+.form__button {
+
+  button {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(28px);
+    color: $white;
+    background-color: $primary;
+    text-align: center;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 2px 7.65px 1.35px rgba(81, 250, 121, 0.72);
+    transition-property: background-color;
+    transition-duration: 500ms;
+    padding: 14px 0;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+
+  }
+
+}
+
+.form__conf {
+  color: #f5f5f5;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(18px);
+  text-align: center;
+  margin: 10px 0;
+
+  a {
+    text-decoration: none;
+    color: #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    transition-duration: 500ms;
+    transition-property: border-color;
+
+    &:hover {
+      border-color: transparent;
+    }
+
+  }
+
+}

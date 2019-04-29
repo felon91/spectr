@@ -1,0 +1,83 @@
+.header {
+  background: url("../img/header-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.header__wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.header__form  {
+  max-width: 413px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  flex-basis: 413px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.header__slogan {
+  text-align: center;
+  align-self: flex-end;
+}
+
+.header__title {
+  font-size: px-to-rem(43px);
+  line-height: px-to-rem(63px);
+  color: #252525;
+  text-transform: uppercase;
+  font-family: 'impactregular';
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.header__title-black {
+  color: $black;
+}
+
+.header__stroke {
+  color: $second;
+  text-shadow:
+    -0   -1px 2px #000000,
+    0   -1px 2px #000000,
+    -0    1px 2px #000000,
+    0    1px 2px #000000,
+    -1px -0   2px #000000,
+    1px -0   2px #000000,
+    -1px  0   2px #000000,
+    1px  0   2px #000000,
+    -1px -1px 2px #000000,
+    1px -1px 2px #000000,
+    -1px  1px 2px #000000,
+    1px  1px 2px #000000,
+    -1px -1px 2px #000000,
+    1px -1px 2px #000000,
+    -1px  1px 2px #000000,
+    1px  1px 2px #000000;
+}
+
+.header__calc {
+  text-decoration: none;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(28px);
+  text-align: center;
+  letter-spacing: px-to-rem(0.45px);
+  font-weight: 700;
+  color: $primary;
+  width: 223px;
+  padding: 14px 0;
+  box-shadow: 0px 0px 6.23px 0.77px rgba(62, 207, 96, 0.8);
+  display: block;
+  margin: 0 auto 265px;
+  background-color: #505050;
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  &:hover {
+    background-color: darken(#505050, 15%);
+  }
+
+}

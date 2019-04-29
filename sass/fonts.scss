@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'helveticaneuecyr';
+  src: url('../fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyr';
+  src: url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyr';
+  src: url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyr';
+  src: url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'impactregular';
+  src: url('../fonts/impact-webfont.woff2') format('woff2'),
+  url('../fonts/impact-webfont.woff') format('woff');
+  font-weight: 400;
+}
